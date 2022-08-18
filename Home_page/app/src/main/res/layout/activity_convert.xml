@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171433"
+    tools:context=".convert">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backbtn"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="375dp"
+        android:background="@drawable/round_arrow_back_white_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="96dp"
+        android:fontFamily="sans-serif-black"
+        android:text="SWAP CONVERT"
+        android:textColor="#F4F6FC"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/actual_convert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="sans-serif-black"
+        android:text="Convert"
+        android:textColor="#F4F6FC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/swap"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="144dp"
+        android:background="@drawable/gradient"
+        android:drawableLeft="@drawable/round_swap_horiz_white_24"
+        android:drawablePadding="1dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingStart="20dp"
+        android:paddingEnd="1dp"
+        android:text="BTC->USD"
+        android:textColor="#F4F6FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rezultat_conv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="154dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#F4F6FC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_cur" />
+
+    <TextView
+        android:id="@+id/curr_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="183dp"
+        android:gravity="center"
+        android:text="ratedd"
+        android:textColor="#F4F6FC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swap" />
+
+    <EditText
+        android:id="@+id/amount_cur"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#F4F6FC"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#F4F6FC"
+        android:textColorHint="#F4F6FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_rate" />
+
+    <TextView
+        android:id="@+id/currency2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="159dp"
+        android:gravity="center"
+        android:text="USD:"
+        android:textColor="#F4F6FC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_cur" />
+
+    <TextView
+        android:id="@+id/currency1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="156dp"
+        android:gravity="center"
+        android:text="Currency"
+        android:textColor="#F4F6FC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_rate" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosmall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

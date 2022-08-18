@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ePortfo</string>
+    <string name="convert">convert</string>
+    <string name="select_profile">SELECT PROFILE</string>
+    <string name="profile_1">Profile 1</string>
+    <string name="profile_2">Profile 2</string>
+    <string name="profile_3">Profile 3</string>
+    <string name="logo">logo</string>
+    <string name="top_coins">Top coins</string>
+</resources>

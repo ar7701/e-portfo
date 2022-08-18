@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171433"
+    tools:context=".Add_portfolio">
+
+    <TextView
+        android:id="@+id/crypto_id"
+        android:layout_width="208dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="144dp"
+        android:gravity="center"
+        android:text="Crypto_valuta"
+        android:textColor="#F4F6FC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entr_amount">
+
+        <RadioButton
+            android:id="@+id/buy_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Buy"
+            android:textColor="#F4F6FC"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="441dp" />
+
+        <RadioButton
+            android:id="@+id/sell_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:textColor="#F4F6FC"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="489dp" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/transaction"
+        android:layout_width="201dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="sans-serif-black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Execute transaction"
+        android:textColor="#F4F6FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/curr_amount"
+        android:layout_width="129dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="163dp"
+        android:gravity="center"
+        android:text="Current_value"
+        android:textColor="#F4F6FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_portf" />
+
+    <EditText
+        android:id="@+id/entr_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="#F4F6FC"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter amount"
+        android:inputType="textPersonName"
+        android:textColor="#F4F6FC"
+        android:textColorHint="#F4F6FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_amount" />
+
+    <TextView
+        android:id="@+id/Symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="150dp"
+        android:gravity="center"
+        android:text="Symbol"
+        android:textColor="#F4F6FC"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crypto_id" />
+
+    <ImageView
+        android:id="@+id/icon_p"
+        android:layout_width="31dp"
+        android:layout_height="27dp"
+
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#F4F6FC"
+        app:layout_constraintEnd_toStartOf="@+id/Symbol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crypto_id"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/curr_portf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="131dp"
+        android:gravity="center"
+        android:text="Currently in portfolio:"
+        android:textColor="#F4F6FC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Symbol" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="375dp"
+        android:background="@drawable/round_arrow_back_white_24"
+        android:textColor="#F4F6FC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="113dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logosmall" />
+</androidx.constraintlayout.widget.ConstraintLayout>

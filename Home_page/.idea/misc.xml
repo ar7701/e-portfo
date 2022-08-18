@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/EMP/Home_page/app/src/main/res/drawable/button_shadow.xml" value="0.2265625" />
+        <entry key="..\:/EMP/Home_page/app/src/main/res/drawable/gradient.xml" value="0.25052083333333336" />
+        <entry key="..\:/EMP/Home_page/app/src/main/res/drawable/rounded_corners.xml" value="0.2265625" />
+        <entry key="..\:/EMP/Home_page/app/src/main/res/drawable/shape.xml" value="0.2265625" />
+        <entry key="..\:/EMP/Home_page/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
+        <entry key="..\:/EMP/Home_page/app/src/main/res/layout/activity_main.xml" value="0.536" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable-v24/round_paid_20.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/gradient.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/gradient_topcoins.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/gradientsquares.xml" value="0.18958333333333333" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/iconbutton.xml" value="0.14427083333333332" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/rounded_corners.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/drawable/shape.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_convert.xml" value="0.536" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_register.xml" value="0.4" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_search.xml" value="0.264" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/activity_top_crypto.xml" value="0.45965270684371806" />
+        <entry key="..\:/Users/azrar/OneDrive/Desktop/ePortfo/Home_page/app/src/main/res/layout/cryptotop_items.xml" value="0.6" />
+        <entry key="..\:/Users/barbo/AndroidStudioProjects/Home_page/app/src/main/res/layout/activity_convert.xml" value="0.3625" />
+        <entry key="..\:/Users/barbo/AndroidStudioProjects/Home_page/app/src/main/res/layout/activity_home_page.xml" value="0.3625" />
+        <entry key="..\:/Users/barbo/AndroidStudioProjects/Home_page/app/src/main/res/layout/activity_main.xml" value="0.2884963768115942" />
+        <entry key="..\:/Users/barbo/AndroidStudioProjects/Home_page/app/src/main/res/layout/activity_search.xml" value="0.38262781748213304" />
+<<<<<<< Updated upstream
+=======
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_convert.xml" value="0.1921875" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_home_page.xml" value="0.21197916666666666" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_register.xml" value="0.25625" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_search.xml" value="0.3625" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_top_crypto.xml" value="0.43216630196936545" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/activity_watchlist.xml" value="0.36764705882352944" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/cryptotop_items.xml" value="0.5" />
+        <entry key="..\:/Users/barbo/GitHub/ePortfo/Home_page/app/src/main/res/layout/watchlist_items.xml" value="0.67" />
+>>>>>>> Stashed changes
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

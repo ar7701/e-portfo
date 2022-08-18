@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "637198853592",
+    "firebase_url": "https://eportfo-5a2ad-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eportfo-5a2ad",
+    "storage_bucket": "eportfo-5a2ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637198853592:android:d0a54621016323b3817ead",
+        "android_client_info": {
+          "package_name": "app.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637198853592-srn093k6qpo2o3rc942uun6lq5a9giev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4r3JzXuCLtU-ybW-3T1A9eNMqRIMjNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637198853592-srn093k6qpo2o3rc942uun6lq5a9giev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171433">
+
+        <EditText
+            android:id="@+id/search_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="101dp"
+            android:backgroundTint="#F4F6FC"
+            android:ems="10"
+            android:hint="search..."
+            android:inputType="textPersonName"
+            android:textColor="#F4F6FC"
+            android:textColorHint="#F4F6FC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_price"
+            android:layout_width="129dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="162dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="sans-serif-black"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Price"
+            android:textColor="#F4F6FC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_value" />
+
+        <TextView
+            android:id="@+id/not_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="No coin was found \n with your entry!"
+            android:textAlignment="center"
+            android:textColor="#F1AB61"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_price" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="305dp"
+            android:layout_height="415dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="47dp"
+            android:background="@drawable/customcard"
+            android:backgroundTint="#1E1B40"
+            android:fontFamily="sans-serif-black"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_price">
+
+            <TextView
+                android:id="@+id/mkt_rank"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_marginTop="125dp"
+                android:fontFamily="sans-serif-regular"
+                android:gravity="center"
+                android:text="rank"
+                android:textColor="#F4F6FC"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/symbols"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="symbol"
+                android:textColor="#F4F6FC"
+                android:textSize="25sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/curr_price_val"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="price"
+                android:textColor="#F4F6FC"
+                android:textSize="23sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/volume"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:fontFamily="sans-serif-regular"
+                android:gravity="center"
+                android:text="volume"
+                android:textColor="#F4F6FC"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/h24chng"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="185dp"
+                android:fontFamily="sans-serif-regular"
+                android:gravity="center"
+                android:text="24hrchng"
+                android:textColor="#F4F6FC"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/d7chng"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="215dp"
+                android:fontFamily="sans-serif-regular"
+                android:gravity="center"
+                android:text="7dchng"
+                android:textColor="#F4F6FC"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/mkt_cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:gravity="center"
+                android:text="mkt_cap"
+                android:textColor="#F4F6FC"
+
+                android:textSize="18sp" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="278dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="255dp"
+                android:layout_marginEnd="10dp"
+                android:background="#2E2A59"
+                android:visibility="invisible"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/symb_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="16dp"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/top_coins"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="sans-serif-black"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/top_coins"
+            android:textColor="#F4F6FC"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/convert_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="sans-serif-black"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/convert"
+            android:textColor="#F4F6FC"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ImageButton
+            android:id="@+id/remove_wat"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="20dp"
+            android:background="#1E1B40"
+            android:padding="1dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/round_visibility_off_white_36"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/search_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/add_watch"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="20dp"
+            android:background="#1E1B40"
+            android:padding="1dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/round_visibility_white_36"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/search_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/add_portf"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginEnd="96dp"
+            android:background="#1E1B40"
+            android:padding="1dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/round_add_circle_white_36"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/search_price"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
